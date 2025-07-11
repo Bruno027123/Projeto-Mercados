@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca de Podcasts</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+    header {
+      background-color: #343a40;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #e9ecef;
+      padding: 10px;
+    }
+    .tab {
+      margin: 5px;
+      padding: 10px 20px;
+      background: #dee2e6;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .tab:hover {
+      background: #ced4da;
+    }
+    .tab.active {
+      background: #495057;
+      color: white;
+    }
+    .tabela {
+      display: none;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 900px;
+      border-collapse: collapse;
+    }
+    .tabela.active {
+      display: table;
+    }
+    table {
+      width: 100%;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #dee2e6;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f3f5;
+    }
+    tr:hover {
+      background-color: #f8f9fa;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #868e96;
+    }
+  </style>
+  <script>
+    function selecionarAba(id) {
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tabela').forEach(el => el.classList.remove('active'));
+      document.getElementById("tab-" + id).classList.add("active");
+      document.getElementById("tabela-" + id).classList.add("active");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>📚 Biblioteca de Podcasts</h1>
+  </header>
+  <div class="tabs">
+<div class="tab active" id="tab-acquired" onclick="selecionarAba('acquired')">Acquired</div>
+<div class="tab" id="tab-capital_allocators" onclick="selecionarAba('capital_allocators')">Capital Allocators</div>
+<div class="tab" id="tab-do_zero_ao_topo" onclick="selecionarAba('do_zero_ao_topo')">Do Zero ao Topo</div>
+<div class="tab" id="tab-expertceo_talks" onclick="selecionarAba('expertceo_talks')">ExpertCEO Talks</div>
+<div class="tab" id="tab-invest_the_like_best" onclick="selecionarAba('invest_the_like_best')">Invest The Like Best</div>
+<div class="tab" id="tab-lado_b" onclick="selecionarAba('lado_b')">Lado B</div>
+<div class="tab" id="tab-market_makers" onclick="selecionarAba('market_makers')">Market Makers</div>
+<div class="tab" id="tab-outliers" onclick="selecionarAba('outliers')">Outliers</div>
+<div class="tab" id="tab-stock_pickers" onclick="selecionarAba('stock_pickers')">Stock Pickers</div>
+<div class="tab" id="tab-the_acquirers" onclick="selecionarAba('the_acquirers')">The Acquirers</div>
+<div class="tab" id="tab-whg_overview" onclick="selecionarAba('whg_overview')">WHG Overview</div>
+</div>
+<table class="tabela active" id="tabela-acquired">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>20/04/2025</td><td><a href="./pdfs/Acquired/Acquired - 20-04-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-capital_allocators">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>12/05/2025</td><td><a href="./pdfs/Capital Allocators/Capital Allocators - 12-05-2025.pdf" download>Baixar</a></td></tr>
+<tr><td>05/05/2025</td><td><a href="./pdfs/Capital Allocators/Capital Allocators - 05-05-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-do_zero_ao_topo">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>18/04/2025</td><td><a href="./pdfs/Do Zero ao Topo/Do Zero ao Topo - 18-04-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-expertceo_talks">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>10/04/2025</td><td><a href="./pdfs/ExpertCEO Talks/ExpertCEO Talks - 10-04-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-invest_the_like_best">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>06/05/2025</td><td><a href="./pdfs/Invest The Like Best/Invest The Like Best - 06-05-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-lado_b">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>20/12/2023</td><td><a href="./pdfs/Lado B/Lado B - 20-12-2023.pdf" download>Baixar</a></td></tr>
+<tr><td>10/12/2023</td><td><a href="./pdfs/Lado B/Lado B - 10-12-2023.pdf" download>Baixar</a></td></tr>
+<tr><td>26/11/2023</td><td><a href="./pdfs/Lado B/Lado B - 26-11-2023.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-market_makers">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>01/05/2025</td><td><a href="./pdfs/Market Makers/Market Makers - 01-05-2025  .pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-outliers">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>12/05/2025</td><td><a href="./pdfs/Outliers/Outliers - 12-05-2025.pdf" download>Baixar</a></td></tr>
+<tr><td>06/05/2025</td><td><a href="./pdfs/Outliers/Outliers - 06-05-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-stock_pickers">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>08/05/2025</td><td><a href="./pdfs/Stock Pickers/08-05-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-the_acquirers">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>13/05/2025</td><td><a href="./pdfs/The Acquirers/The Acquirers-13-05-2025.pdf" download>Baixar</a></td></tr>
+<tr><td>06/05/2025</td><td><a href="./pdfs/The Acquirers/The Acquirers-06-05-2025.pdf" download>Baixar</a></td></tr>
+</table>
+<table class="tabela" id="tabela-whg_overview">
+<tr><th>Data</th><th>Download</th></tr>
+<tr><td>11/04/2025</td><td><a href="./pdfs/WHG Overview/11-04-2025-whg.pdf" download>Baixar</a></td></tr>
+</table>
+
+<footer>
+  &copy; 2025 Biblioteca de Podcasts. Todos os direitos reservados.
+</footer>
+</body>
+</html>
