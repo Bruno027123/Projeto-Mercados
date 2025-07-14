@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "Minha Biblioteca de Podcasts" }}</title>
+    <link rel="stylesheet" href="/style.css"> {# Cuidado com a barra antes do style.css #}
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Biblioteca de Resumos de Podcasts!</h1>
+    </header>
+
+    <main>
+        {# O conteúdo de cada página será inserido aqui #}
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minha Biblioteca de Podcasts. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

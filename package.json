@@ -1,0 +1,23 @@
+{
+  "name": "biblioteca-de-podcast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruno027123/Projeto-Mercados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bruno027123/Projeto-Mercados/issues"
+  },
+  "homepage": "https://github.com/Bruno027123/Projeto-Mercados#readme",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
